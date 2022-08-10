@@ -1,6 +1,7 @@
 import React from "react";
 import { Comment } from "./containers/Comment";
 import Clock from "./components/Clock";
+import Toggle from "./components/Button";
 
 class App extends React.Component {
   render() {
@@ -15,13 +16,13 @@ class App extends React.Component {
     return (
       <div className="app" data-testid="application_container">
         <h1 data-testid="app-heading">Hello, World</h1>
+        <Clock />
         <Comment
           date={comment.date}
           text={comment.text}
           author={comment.author}
         />
-
-        <Clock />
+        <Toggle />
       </div>
     );
   }

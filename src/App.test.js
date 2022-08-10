@@ -25,4 +25,10 @@ describe("App component tests", () => {
     const currentDate = screen.getByTestId("Clock");
     expect(currentDate).toBeInTheDocument();
   });
+
+  test("renders Button Component Successfully", () => {
+    render(<App />);
+    const btnSwitch = screen.getByTestId("btn--switch");
+    expect(btnSwitch).toBeInTheDocument();
+  });
 });
