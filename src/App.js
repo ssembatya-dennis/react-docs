@@ -1,5 +1,6 @@
 import React from "react";
 import { Comment } from "./containers/Comment";
+import Clock from "./components/Clock";
 
 class App extends React.Component {
   render() {
@@ -19,6 +20,8 @@ class App extends React.Component {
           text={comment.text}
           author={comment.author}
         />
+
+        <Clock />
       </div>
     );
   }

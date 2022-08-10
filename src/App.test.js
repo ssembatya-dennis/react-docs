@@ -19,4 +19,10 @@ describe("App component tests", () => {
     const appComment = screen.getByTestId("Comment-component");
     expect(appComment).toBeInTheDocument();
   });
+
+  test("renders the Clock Component Successfully", () => {
+    render(<App />);
+    const currentDate = screen.getByTestId("Clock");
+    expect(currentDate).toBeInTheDocument();
+  });
 });
