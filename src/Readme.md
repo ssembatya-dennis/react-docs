@@ -19,3 +19,7 @@ This app is meant to test React/Redux JavaScripts frameworks skills from complet
 - The third task was to learn how to handle events in react and away from Html where we always use lower case for events in react since it's more closely related to javascript than html we use camelCase eg onClick={} rather than onclick='';
 
 - Then the callback function we always pass to an element that will be triggered in the occurance of an event when fired say like "a click", It's this keyword is not bind to the function so you must either bind the this keyword manually or u can use an arrow function in the function declaration e.g handleClick = () => {}; or to use an arrow function while passing the callback to the attribute say onClick={ () =>{ handleClick() } }
+
+## Conditional Rendering
+
+- Basically conditional rendering is very similar to JavaScript conditional statements and my main take away from this topic was that in JS logical operators, mostly the && operator. An Evaluation of true and an expression returns an expression and Evaluation of a false statement and an Expression returns false.

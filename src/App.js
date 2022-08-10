@@ -2,6 +2,7 @@ import React from "react";
 import { Comment } from "./containers/Comment";
 import Clock from "./components/Clock";
 import Toggle from "./components/Button";
+import LoginControl from "./containers/LoginControl";
 
 class App extends React.Component {
   render() {
@@ -23,6 +24,7 @@ class App extends React.Component {
           author={comment.author}
         />
         <Toggle />
+        <LoginControl />
       </div>
     );
   }

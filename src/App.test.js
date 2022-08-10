@@ -31,4 +31,10 @@ describe("App component tests", () => {
     const btnSwitch = screen.getByTestId("btn--switch");
     expect(btnSwitch).toBeInTheDocument();
   });
+
+  test("renders LoginControl Component Successfully", () => {
+    render(<App />);
+    const LoginControl = screen.getByTestId("login-control");
+    expect(LoginControl).toBeInTheDocument();
+  });
 });
