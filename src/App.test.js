@@ -37,4 +37,10 @@ describe("App component tests", () => {
     const LoginControl = screen.getByTestId("login-control");
     expect(LoginControl).toBeInTheDocument();
   });
+
+  test("renders Blog Component Successfully", () => {
+    render(<App />);
+    const Blog = screen.getByTestId("blog");
+    expect(Blog).toBeInTheDocument();
+  });
 });
