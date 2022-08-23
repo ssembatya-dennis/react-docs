@@ -4,6 +4,8 @@ import Clock from "./components/Clock";
 import Toggle from "./components/Button";
 import LoginControl from "./containers/LoginControl";
 import Blog from "./components/Blog";
+import NameForm from "./components/NameForm";
+import Calculator from "./containers/calculator/Calculator";
 
 class App extends React.Component {
   render() {
@@ -40,6 +42,9 @@ class App extends React.Component {
         <LoginControl />
         <ul>{listitems}</ul>
         <Blog posts={posts} />
+        <NameForm />
+        <br />
+        <Calculator />
       </div>
     );
   }

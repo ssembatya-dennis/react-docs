@@ -28,3 +28,10 @@ This app is meant to test React/Redux JavaScripts frameworks skills from complet
 
 - Here whenever we are given an array and we want to display it in our app as a list we are gona probably do the same thing everytime. All we want to do is to map an array and in each iteration we pass the value of the array item into a listitem tag of a list eg const listItems = numbers.map((number) => <li>{number}<l1/>).
 - Hmm Finally then we must give unique keys to each list item. Now my take away in this topic was that we serve keys only and only where the map method is being used and we pass the key as an attr of the listitem e.g const listItems = numbers.map( (number) => <li key={number.toString()}>{number}</li>)
+
+## Forms
+
+- Here we hv looked at the use of forms in a react App and what i noticed is that we must first prevent the default form behavior of openning a new window when the submit button is placed.
+- Then next we want to control the submit form behaviour by declaring a submitForm handler function and passing it to the form onSubmit attribute.
+- We would also want to track changes in the form input using <b>"Controlled Componets"</b>. We make each component to house it's own state and only use the setState method to change the input value declared in the state to event.target.value that is passed in the handlechange function that is passed in the onChange attribute in the form element.
+- Finally I hv noticed that 'text', 'textarea' & 'select' input types are handled similar and in React they all depend on the value attribute.

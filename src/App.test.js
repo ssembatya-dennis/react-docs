@@ -43,4 +43,10 @@ describe("App component tests", () => {
     const Blog = screen.getByTestId("blog");
     expect(Blog).toBeInTheDocument();
   });
+
+  test("renders the Form that holds the text input Successfully", () => {
+    render(<App />);
+    const NameForm = screen.getByTestId("name-form");
+    expect(NameForm).toBeInTheDocument();
+  });
 });
